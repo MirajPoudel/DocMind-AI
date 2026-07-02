@@ -1,0 +1,9 @@
+streamlit
+llama-parse
+sentence-transformers
+faiss-cpu
+numpy
+python-dotenv
+requests
+tiktoken
+nest-asyncio

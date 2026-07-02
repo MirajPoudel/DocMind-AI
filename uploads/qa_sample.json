@@ -1,0 +1,41 @@
+{
+  "dataset_name": "sample_qa_dataset",
+  "version": "1.0",
+  "data": [
+    {
+      "id": "q001",
+      "context": "The Eiffel Tower is a wrought-iron lattice tower located in Paris, France. It was designed by engineer Gustave Eiffel and completed in 1889 as the entrance to the World's Fair. It stands at 330 meters tall and was the tallest man-made structure in the world until 1930.",
+      "question": "Who designed the Eiffel Tower?",
+      "answer": "Gustave Eiffel",
+      "answer_start": 95
+    },
+    {
+      "id": "q002",
+      "context": "The Eiffel Tower is a wrought-iron lattice tower located in Paris, France. It was designed by engineer Gustave Eiffel and completed in 1889 as the entrance to the World's Fair. It stands at 330 meters tall and was the tallest man-made structure in the world until 1930.",
+      "question": "In which year was the Eiffel Tower completed?",
+      "answer": "1889",
+      "answer_start": 137
+    },
+    {
+      "id": "q003",
+      "context": "Photosynthesis is the process by which green plants and some other organisms use sunlight to synthesize foods from carbon dioxide and water. Photosynthesis in plants generally involves the green pigment chlorophyll and generates oxygen as a byproduct.",
+      "question": "What pigment is generally involved in photosynthesis?",
+      "answer": "chlorophyll",
+      "answer_start": 176
+    },
+    {
+      "id": "q004",
+      "context": "Mount Everest, located in the Mahalangur Himal sub-range of the Himalayas, is Earth's highest mountain above sea level. Its peak is 8,849 meters above sea level, and it lies on the border between Nepal and the Tibet Autonomous Region of China.",
+      "question": "What is the height of Mount Everest?",
+      "answer": "8,849 meters",
+      "answer_start": 121
+    },
+    {
+      "id": "q005",
+      "context": "Python is a high-level, general-purpose programming language created by Guido van Rossum and first released in 1991. It emphasizes code readability with its notable use of significant indentation.",
+      "question": "Who created Python?",
+      "answer": "Guido van Rossum",
+      "answer_start": 75
+    }
+  ]
+}

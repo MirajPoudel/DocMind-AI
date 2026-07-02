@@ -1,0 +1,20 @@
+[
+  {
+    "chunk_id": 0,
+    "text": "# Aarav Sharma\n\nKathmandu, Nepal | +977-98XXXXXXXX | aarav.sharma.dev@gmail.com | linkedin.com/in/aaravsharma | github.com/aaravsharma\n\n---\n\n## Summary\n\nDetail-oriented Software Engineer with 3+ years of experience building scalable web applications and backend services. Skilled in Python, JavaScript, and cloud infrastructure, with a strong track record of delivering performant, maintainable systems in fast-paced teams.\n\n---\n\n## Skills\n\n- **Languages:** Python, JavaScript, TypeScript, SQL, Java\n- **Frameworks:** Django, FastAPI, React, Node.js, Express\n- **Tools & Platforms:** Docker, Git, AWS (EC2, S3, Lambda), PostgreSQL, MongoDB, Redis\n- **Practices:** REST API design, CI/CD, Agile/Scrum, Unit Testing (PyTest, Jest)\n\n---\n\n## Work Experience\n\n### Software Engineer \u2014 Nimbus Tech Solutions, Kathmandu\n*Jan 2023 \u2013 Present*\n\n- Designed and implemented microservices handling 50K+ daily requests, reducing average latency by 30%\n- Led migration of a legacy monolith to a containerized archite",
+    "start": 0,
+    "end": 1000
+  },
+  {
+    "chunk_id": 1,
+    "text": "mplemented microservices handling 50K+ daily requests, reducing average latency by 30%\n- Led migration of a legacy monolith to a containerized architecture using Docker and AWS ECS\n- Mentored 2 junior developers and conducted regular code reviews to maintain code quality standards\n- Built internal analytics dashboard using React and FastAPI, adopted by 4 cross-functional teams\n\n### Junior Backend Developer \u2014 Himal Softworks, Pokhara\n*Jul 2021 \u2013 Dec 2022*\n\n- Developed RESTful APIs for an e-commerce platform serving 10,000+ monthly active users\n- Optimized PostgreSQL queries, cutting average page load time from 2.1s to 0.8s\n- Collaborated with QA team to implement automated testing, increasing test coverage from 40% to 85%\n\n---\n\n## Projects\n\n**Multi-PDF RAG Chat Assistant** \u2014 Personal Project\n- Built a retrieval-augmented generation chatbot using FAISS, sentence-transformers, and local LLMs via Ollama\n- Implemented custom chunking pipeline for multi-document ingestion using LlamaParse\n\n*",
+    "start": 850,
+    "end": 1850
+  },
+  {
+    "chunk_id": 2,
+    "text": "using FAISS, sentence-transformers, and local LLMs via Ollama\n- Implemented custom chunking pipeline for multi-document ingestion using LlamaParse\n\n**Expense Tracker API** \u2014 Personal Project\n- Developed a FastAPI-based expense tracking service with JWT authentication and PostgreSQL backend\n- Deployed on AWS with CI/CD pipeline via GitHub Actions\n\n---\n\n## Education\n\n**B.Sc. Computer Science and Information Technology**\nTribhuvan University, Nepal \u2014 2017 \u2013 2021\n\n---\n\n## Certifications\n\n- AWS Certified Cloud Practitioner (2023)\n- Meta Backend Developer Professional Certificate (Coursera, 2022)\n\n---\n\n## Languages\n\n- Nepali (Native)\n- English (Fluent)\n- Hindi (Conversational)",
+    "start": 1700,
+    "end": 2700
+  }
+]

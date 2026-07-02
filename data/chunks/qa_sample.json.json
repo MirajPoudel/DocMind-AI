@@ -1,0 +1,20 @@
+[
+  {
+    "chunk_id": 0,
+    "text": "dataset_name.: sample_qa_dataset\nversion.: 1.0\ndata.[0].id.: q001\ndata.[0].context.: The Eiffel Tower is a wrought-iron lattice tower located in Paris, France. It was designed by engineer Gustave Eiffel and completed in 1889 as the entrance to the World's Fair. It stands at 330 meters tall and was the tallest man-made structure in the world until 1930.\ndata.[0].question.: Who designed the Eiffel Tower?\ndata.[0].answer.: Gustave Eiffel\ndata.[0].answer_start.: 95\ndata.[1].id.: q002\ndata.[1].context.: The Eiffel Tower is a wrought-iron lattice tower located in Paris, France. It was designed by engineer Gustave Eiffel and completed in 1889 as the entrance to the World's Fair. It stands at 330 meters tall and was the tallest man-made structure in the world until 1930.\ndata.[1].question.: In which year was the Eiffel Tower completed?\ndata.[1].answer.: 1889\ndata.[1].answer_start.: 137\ndata.[2].id.: q003\ndata.[2].context.: Photosynthesis is the process by which green plants and some other orga",
+    "start": 0,
+    "end": 1000
+  },
+  {
+    "chunk_id": 1,
+    "text": "nswer.: 1889\ndata.[1].answer_start.: 137\ndata.[2].id.: q003\ndata.[2].context.: Photosynthesis is the process by which green plants and some other organisms use sunlight to synthesize foods from carbon dioxide and water. Photosynthesis in plants generally involves the green pigment chlorophyll and generates oxygen as a byproduct.\ndata.[2].question.: What pigment is generally involved in photosynthesis?\ndata.[2].answer.: chlorophyll\ndata.[2].answer_start.: 176\ndata.[3].id.: q004\ndata.[3].context.: Mount Everest, located in the Mahalangur Himal sub-range of the Himalayas, is Earth's highest mountain above sea level. Its peak is 8,849 meters above sea level, and it lies on the border between Nepal and the Tibet Autonomous Region of China.\ndata.[3].question.: What is the height of Mount Everest?\ndata.[3].answer.: 8,849 meters\ndata.[3].answer_start.: 121\ndata.[4].id.: q005\ndata.[4].context.: Python is a high-level, general-purpose programming language created by Guido van Rossum and first re",
+    "start": 850,
+    "end": 1850
+  },
+  {
+    "chunk_id": 2,
+    "text": "tart.: 121\ndata.[4].id.: q005\ndata.[4].context.: Python is a high-level, general-purpose programming language created by Guido van Rossum and first released in 1991. It emphasizes code readability with its notable use of significant indentation.\ndata.[4].question.: Who created Python?\ndata.[4].answer.: Guido van Rossum\ndata.[4].answer_start.: 75",
+    "start": 1700,
+    "end": 2700
+  }
+]

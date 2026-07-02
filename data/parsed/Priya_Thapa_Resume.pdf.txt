@@ -1,0 +1,46 @@
+Priya Thapa
+Biratnagar, Nepal  |  +977-98XXXXXXXX  |  priya.thapa.design@gmail.com  |  linkedin.com/in/priyathapa  | 
+behance.net/priyathapa
+Summary
+Creative and detail-driven UI/UX Designer with 4+ years of experience crafting user-centered digital products for
+startups and mid-sized companies. Skilled in translating complex requirements into intuitive, visually compelling
+interfaces, with a strong foundation in user research, prototyping, and design systems.
+Skills
+Design Tools: Figma, Adobe XD, Illustrator, Photoshop   |   Core Skills: Wireframing, Prototyping, User Research,
+Design Systems, Interaction Design   |   Other: HTML/CSS basics, Design Handoff (Zeplin), Usability Testing
+Work Experience
+Senior UI/UX Designer — Kriti Studio, Kathmandu
+Mar 2022 – Present
+•
+Led end-to-end design for 6 client products, from research to high-fidelity prototypes, improving average user
+satisfaction scores by 25%
+•
+Built and maintained a shared design system used across 3 product teams, cutting design handoff time by
+40%
+•
+Conducted usability testing sessions with 50+ participants to inform iterative design improvements
+UI/UX Designer — Sunrise Digital, Biratnagar
+Jun 2020 – Feb 2022
+•
+Designed mobile-first interfaces for 8+ client apps across e-commerce and fintech domains
+•
+Collaborated with developers to ensure design fidelity during implementation, reducing UI bugs by 30%
+•
+Created wireframes and clickable prototypes for early-stage client pitches, contributing to a 20% pitch
+win-rate increase
+Projects
+Local Marketplace App Redesign — Personal Project
+Redesigned a community marketplace app end-to-end, focusing on accessibility and simplified onboarding,
+showcased on Behance
+Design System Starter Kit — Open Source
+Published a Figma component library used by 200+ designers, covering typography, color, and component
+tokens
+Education
+B.A. in Visual Communication Design
+Kathmandu University, Nepal — 2016 – 2020
+Certifications
+Google UX Design Professional Certificate (2021)   |   Interaction Design Foundation — UX Research Certification
+(2022)
+Languages
+
+Nepali (Native)   |   English (Fluent)   |   Hindi (Conversational)

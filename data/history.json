@@ -1,0 +1,22 @@
+[
+  {
+    "role": "user",
+    "message": "who is priya",
+    "timestamp": "2026-07-02T19:44:09.321414"
+  },
+  {
+    "role": "assistant",
+    "message": "Priya Thapa is a Creative and detail-driven UI/UX Designer with 4+ years of experience. She is skilled in UI/UX design tools and core skills like wireframing, prototyping, user research, design systems, and interaction design. She works as a Senior UI/UX Designer at Kriti Studio in Kathmandu.",
+    "timestamp": "2026-07-02T19:44:12.027806"
+  },
+  {
+    "role": "user",
+    "message": "In which year was the Eiffel Tower completed?",
+    "timestamp": "2026-07-02T19:46:18.573194"
+  },
+  {
+    "role": "assistant",
+    "message": "1889",
+    "timestamp": "2026-07-02T19:46:21.831250"
+  }
+]
