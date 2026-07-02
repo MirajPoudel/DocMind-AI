@@ -71,9 +71,10 @@ st.markdown(
 # ==========================================================
 st.sidebar.title("📚 DocMind AI")
 
-uploaded_file = st.sidebar.file_uploader(
+uploaded_files = st.sidebar.file_uploader(
     "Upload PDF / Markdown / JSON",
-    type=["pdf", "md", "json"]
+    type=["pdf", "md", "json"],
+    accept_multiple_files=True
 )
 
 if st.sidebar.button("🧹 Clear Chat History"):
@@ -97,33 +98,37 @@ st.title("📚 DocMind AI - RAG Document Assistant")
 # ==========================================================
 # FILE PROCESSING PIPELINE
 # ==========================================================
-if uploaded_file:
+if uploaded_files:
+    processed_files = []
 
-    # Save file
-    file_path = save_uploaded_file(uploaded_file)
+    for uploaded_file in uploaded_files:
+        # Save file
+        file_path = save_uploaded_file(uploaded_file)
 
-    with st.spinner("Parsing document..."):
-        text = parse_file(file_path)
+        with st.spinner(f"Parsing {uploaded_file.name}..."):
+            text = parse_file(file_path)
 
-    st.success("Document parsed successfully!")
+        # Save parsed text
+        save_parsed_text(uploaded_file.name, text)
 
-    # Save parsed text
-    save_parsed_text(uploaded_file.name, text)
+        # Chunking
+        with st.spinner(f"Chunking {uploaded_file.name}..."):
+            chunks = chunk_text(text)
 
-    # Chunking
-    with st.spinner("Chunking document..."):
-        chunks = chunk_text(text)
+        # Save chunks
+        save_chunks(uploaded_file.name, chunks)
 
-    st.success(f"Created {len(chunks)} chunks")
+        # Embedding + Vector DB
+        with st.spinner(f"Indexing {uploaded_file.name} into vector database..."):
+            add_documents(uploaded_file.name, chunks)
 
-    # Save chunks
-    save_chunks(uploaded_file.name, chunks)
+        processed_files.append({
+            "name": uploaded_file.name,
+            "text": text,
+            "chunks": chunks,
+        })
 
-    # Embedding + Vector DB
-    with st.spinner("Indexing into vector database..."):
-        add_documents(uploaded_file.name, chunks)
-
-    st.success("Document indexed successfully!")
+    st.success(f"Processed {len(processed_files)} file(s) successfully!")
 
     # ======================================================
     # TABS
@@ -136,8 +141,12 @@ if uploaded_file:
     # TAB 1: Parsed Data
     # -------------------------
     with tab1:
-        st.subheader("Parsed Document")
-        st.text_area("Content", text, height=400)
+        st.subheader("Parsed Documents")
+
+        for doc in processed_files:
+            st.markdown(f"### {doc['name']}")
+            st.text_area(f"Content - {doc['name']}", doc["text"], height=250)
+            st.markdown("---")
 
     # -------------------------
     # TAB 2: Chunks
@@ -145,10 +154,13 @@ if uploaded_file:
     with tab2:
         st.subheader("Document Chunks")
 
-        for c in chunks:
-            st.markdown(f"### Chunk {c['chunk_id']}")
-            st.write(c["text"])
-            st.markdown("---")
+        for doc in processed_files:
+            st.markdown(f"### {doc['name']}")
+
+            for c in doc["chunks"]:
+                st.markdown(f"#### Chunk {c['chunk_id']}")
+                st.write(c["text"])
+                st.markdown("---")
 
     # -------------------------
     # TAB 3: Retrieved Chunks

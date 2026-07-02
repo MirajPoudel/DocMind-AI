@@ -26,11 +26,14 @@ _INDEX: List[Dict[str, Any]] = []
 
 def add_documents(filename: str, chunks: list) -> None:
     """
-    Store document chunks in the in-memory index.
+    Store document chunks in the in-memory index without duplicating
+    the same content multiple times.
     """
+    seen_texts = {item["text"] for item in _INDEX}
+
     for chunk in chunks:
         text = chunk.get("text", "")
-        if not text:
+        if not text or text in seen_texts:
             continue
 
         _INDEX.append({
@@ -43,6 +46,7 @@ def add_documents(filename: str, chunks: list) -> None:
                 "source": filename,
             },
         })
+        seen_texts.add(text)
 
 
 def search(query: str, top_k: int = 5) -> dict:
